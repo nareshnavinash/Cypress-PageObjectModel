@@ -1,0 +1,30 @@
+{
+  "devDependencies": {
+    "cypress": "^4.9.0"
+  },
+  "name": "pageobjectmodel-cypress",
+  "version": "1.0.0",
+  "description": "Cypress test automation in page object model",
+  "main": "index.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nareshnavinash/Cypress-PageObjectModel.git"
+  },
+  "keywords": [
+    "cypress",
+    "pom",
+    "ui-automation",
+    "test-automation",
+    "framework"
+  ],
+  "author": "Naresh Sekar",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/nareshnavinash/Cypress-PageObjectModel/issues"
+  },
+  "homepage": "https://github.com/nareshnavinash/Cypress-PageObjectModel#readme"
+}
