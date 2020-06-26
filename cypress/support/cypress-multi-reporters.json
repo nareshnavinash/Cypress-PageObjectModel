@@ -1,0 +1,3 @@
+{
+    "reporterEnabled": "@mochajs/json-file-reporter, mocha-allure-reporter, mochawesome"
+}
