@@ -6,9 +6,19 @@
   "version": "1.0.0",
   "description": "Cypress test automation in page object model",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "allure-commandline": "^2.9.0",
+    "minimist": "1.2.5",
+    "mocha": "^6.2.0",
+    "mocha-allure-reporter": "^1.4.0"
+  },
   "scripts": {
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "test": "./node_modules/.bin/cypress run --reporter mocha-allure-reporter",
+    "generate-allure": "./node_modules/.bin/allure generate allure-results --clean -o allure-report",
+    "open-allure": "./node_modules/.bin/allure open allure-report",
+    "serve-allure": "./node_modules/.bin/allure serve allure-results",
+    "clean-allure": "rm -r allure-results/ allure-report/"
   },
   "repository": {
     "type": "git",
