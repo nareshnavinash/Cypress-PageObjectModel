@@ -1,19 +1,15 @@
-const { curry } = require("cypress/types/lodash")
+before(() => {
+    cy.log('Global Before Hook #########################');
+});
 
-describe('Hooks', () => {
-    beforeEach(() => {
-        cy.log('I run before every test in every spec file!!!!!!')
-    })
+after(() => {
+    cy.log('Global After Hook ##########################');
+});
 
-    before(() => {
-        cy.log('I run only once before all the test cases')
-    })
+beforeEach(() => {
+    cy.log('I run before every test in every spec file*******')
+});
 
-    after(() => {
-        cy.log('I run only once after all the test cases')
-    })
-
-    afterEach(() => {
-        cy.log('I run after each every test in every spec file!!!!!')
-    })
-})
+afterEach(() => {
+    cy.log('I run after each every test in every spec file-------')
+});

@@ -20,5 +20,5 @@ const {downloadFile} = require('cypress-downloadfile/lib/addPlugin')
 module.exports = (on, config) => {
   require('cypress-plugin-retries/lib/plugin')(on)
   on('task', {downloadFile})
-  on('task', { log (message) { console.log(message); return null } });
+  on('task', { log (message) { console.log("        ->".concat(message)); return null } });
 }
