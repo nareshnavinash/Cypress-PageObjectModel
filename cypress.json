@@ -5,6 +5,8 @@
     },
     "env":
     {
-      "RETRIES": 2
+      "RETRIES": 2,
+      "allureResultsPath": "allure-results",
+      "allure":true
     }
 }
