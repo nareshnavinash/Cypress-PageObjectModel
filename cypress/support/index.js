@@ -17,7 +17,7 @@
 import './commands'
 import './hooks'
 require('cypress-plugin-retries')
-require('@shelex/cypress-allure-plugin')
+require('@shelex/cypress-allure-plugin');
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
