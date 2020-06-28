@@ -15,7 +15,10 @@
 /**
  * @type {Cypress.PluginConfig}
  */
+const {downloadFile} = require('cypress-downloadfile/lib/addPlugin')
+
 module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
+  require('cypress-plugin-retries/lib/plugin')(on)
+  on('task', {downloadFile})
+  on('task', { log (message) { console.log(message); return null } });
 }

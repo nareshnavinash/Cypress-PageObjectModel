@@ -3,3 +3,5 @@ allure-report
 allure-results
 cypress/screenshots
 cypress/videos
+mochawesome-report
+report.json

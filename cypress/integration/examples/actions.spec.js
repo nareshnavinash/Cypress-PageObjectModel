@@ -3,12 +3,14 @@
 context('Actions', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/actions')
+    cy.log("before each...!!!")
   })
 
   // https://on.cypress.io/interacting-with-elements
 
   it('.type() - type into a DOM element', () => {
     // https://on.cypress.io/type
+    Cypress.currentTest.retries(5)
     cy.get('.action-email')
       .type('fake@email.com').should('have.value', 'fake@email.com')
 
