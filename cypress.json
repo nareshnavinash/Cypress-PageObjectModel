@@ -1,12 +1,12 @@
 {
-    "reporter": "cypress-multi-reporters",
-    "reporterOptions": {
-      "configFile": "cypress/support/cypress-multi-reporters.json"
-    },
-    "env":
-    {
-      "RETRIES": 2,
-      "allureResultsPath": "allure-results",
-      "allure":true
-    }
+  "projectId": "2eb3sy",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "cypress/support/cypress-multi-reporters.json"
+  },
+  "env": {
+    "RETRIES": 2,
+    "allureResultsPath": "allure-results",
+    "allure": true
+  }
 }
