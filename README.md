@@ -182,6 +182,14 @@ import ActionsLocator from '../locators/actions.locator';
 
 3. Global hooks are added within the `support/hooks.js` which is included in the `support/index.js` file. Here we could add any common actions among all the test cases at global level. A very common use case is to run the tests against different environment, for which we can pass the environment as a command line argument (or as an environment variable) and parse the same to declare the URL's which has to be consumed inside the tests.
 
+## Parallelization (Multi Thread run)
+
+Cypress makes it a complex process to parallelize the tests since their billing revolvs around this feature. If we compare the other parallelization modules in Ruby or Python the number of parallel nodes is dependent on the number of cores of CPU. But here, we ought to specify a CI tool will different machines in the cloud. If we need to run two parallel mode within a machine, cypress doesn't support that.
+
+## Multi browser automation
+
+Its not possible to launch another browser instance with cypress. Traditionally we could launch multiple browser instance with different specifications to test the web applications. For Synchronous applications like real time chat bot, cloud call center etc., we ought to have multiple browsers launched at the same time. This flexibility is not visible here in cypress.
+
 ## Built With
 
 * [Cypress](https://www.cypress.io/) - Automation core framework
